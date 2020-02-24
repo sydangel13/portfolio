@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheets/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
-    <title>About Sydney</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <title>About Sydney</title>
+    </head>
+    <body>
+        <a class="skip" href="#skip">Skip to Main</a>
+        <header>
+            <img src="images/logo.png" alt="sydney angel" id = "logo">
+            <nav>
+                <ul class="nav_links">
+                    <li class="nav_item"><a href="index.html">Home</a></li>
+                    <li class="nav_item"><a href="resume.html"> Resume</a></li>
+                    <li class="nav_item"><a href="about.html">About Me</a></li>
+                    <li class="nav_item"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = "about" id="skip">
+        <h1> About Sydney </h1>
+        <p> I am a first year Master's student at the University of Michigan studying User Experience Research and Design with a primary focus in research and content strategy.<br>
+            <br>
+            I am incredibly passionate about creating digital content that is easily accessible to all types of users, through empathetic design solutions and personal adaptability. 
+            Ultimately, I hope to plan and develop clear, relevant content that aligns with the user's needs, as well as the business goals.
+            I strive to accomplish this through flushed-out research and analysis. </p>
+            
+        <p> I previously graduated from the University of Michigan, where I double-majored in Biopsychology, Cognition and Neuroscience and Cognitive Science with a focus in decision-making. 
+            In my free time I enjoy playing with my six month old golden-doodle, watching Broadway musicals, hiking through national parks and listening to True Crime podcasts. </p>
+            
+        <p> In the gallery below you can see a photo of my puppy, Tucker, taken over Thanksgiving break. Some photos from previous family vacations/trips and multiple photos of me 
+            with my friends, including my halloween costume from 2018 when I dressed up as Barry B. Benson. One important thing to know about me is that I am incredibly passionate
+            about the Bee Movie and have seen it at least twenty times. </p>
 
-<body>
-  
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="portfolio_resume539.pdf "> Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-<main id = "main">
-    <h1> About Sydney </h1>
-    <p> I am a first year Master's student at the University of Michigan studying User Experience Research and Design with a primary focus in research and content strategy.<br>
-        <br>
-        I am incredibly passionate about creating digital content that is easily accessible to all types of users, through empathetic design solutions and personal adaptability. 
-        Ultimately, I hope to plan and develop clear, relevant content that aligns with the user's needs, as well as the business goals.
-        I strive to accomplish this through flushed-out research and analysis. <br>
-        <br>
-    <p> I previously graduated from the University of Michigan, where I double-majored in Biopsychology, Cognition and Neuroscience and Cognitive Science with a focus in decision-making. 
-        In my free time I enjoy playing with my six month old golden-doodle, watching Broadway musicals, hiking through national parks and listening to True Crime podcasts. </p>
-    <img src = "images/puppy.jpg" alt = "9 week old Golden Doodle" /> 
-    <img src = "images/olderpupper.jpg" alt = "6 month old Golden Doodle" /> 
-    <img src = "images/arches.jpg" alt = "Shot of an arch in arches national park" /> 
-    <img src = "images/hiking.jpg" alt = "Shot of Sydney hiking Angel's Landing" /> 
-</main>
-<footer>
-        <p> Created by Sydney Angel 2020 <br/> 
-            SI 539 Web Design </p>
-    </footer>
-</body>
+        
+        <div>
+            <h2>Gallery</h2>
+            <section id="gallery">
+                <div> <img src = "images/olderpupper.jpg" alt = "6 month old Golden Doodle" /> </div>
+                <div> <img src = "images/siformal.jpeg" alt = "Couple dressed in semi-formal attire" /> </div>
+                <div><img src = "images/roomates.jpeg" alt = "7 girls smiling on a porch" /> </div>
+                <div><img src = "images/bcn.jpeg" alt = "Shot of three girls in major T-shirts" /></div>
+                <div><img src = "images/twin_brother.jpeg" alt ="Sydney next to twin brother at party" /></div>
+                <div><img src = "images/graduationpic.jpg" alt="Roommate graduation photo" /></div>
+                <div><img src = "images/sisters.jpeg" alt="Family photo" /></div>
+                <div><img src = "images/cruise_shrek.jpg" alt="Two girls with Shrek" /></div>
+                <div><img src = "images/bee.jpeg" alt = "Two girls dressed up as Barry B. Benson" /></div>
+            </section>
+        </div>
+        <h2> Contact Me </h2>
+        <section id="contact">
+            <p>If you want to get in contact with me, please fill out the form below:</p>
+            <div class ="form"
+                <form action="/action_page.php" target = "_blank" method = "post">
+                    <label for ="first">First Name:</label>
+                    <input type="text" id ="first" name="fname" Placeholder="First name"/> 
+                
+                    <label for ="last">Last Name:</label>
+                    <input type="text" id ="last" name="lname" Placeholder="Last name"/> 
+                
+                    <label for ="email">Email:</label>
+                    <input type="email" id="email" name ="email" Placeholder="Email address"/> 
+
+                    <label for ="subject"> Subject:</label>
+                    <input type="text" id="subject" name="Subject" Placeholder="Type the subject here"/>
+
+                    <label for="message"> Message:</label>
+                    <input type="text" id="message" name="Message" Placeholder="Type your message here"/>
+
+                    <input type = "Submit" value="Submit">
+
+                    <!-- <button>Submit</button>
+                    <a href = '#' class='button'> </a> -->
+                </form>
+            </div>
+            </section>
+        </main>
+        <footer>
+                <p> Created by Sydney Angel 2020 <br/> 
+                    SI 539 Web Design </p>
+        </footer>
+    </body>
 </html>
 
