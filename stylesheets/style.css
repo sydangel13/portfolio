@@ -315,11 +315,12 @@ input[type=submit]:hover {
   background-attachment: scroll;
 }
 
-.parallax p{
-  height: 1000px;
-  background-color: rgba(237, 237, 237, 0.5);
+.parallax h2, h3, p{
+  /* height: 1000px; */
+  background-color: rgba(237, 237, 237, 0.247);
   font-size: 30px;
 }
+
 .design{
   background-image: url('../images/blue.jpg');
 }
