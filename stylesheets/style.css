@@ -317,6 +317,16 @@ input[type=submit]:hover {
 .design{
   background-image: url('../images/blue.jpg');
 }
+
+.design h2, h3{
+  color: #2E2E2E;
+}
+
+.design p{
+  background-color: #EDEDED;
+  color: #2E2E2E;
+}
+
 @media screen and (prefers-reduced-motion: reduce){
   .parallax{
     background-attachment: fixed;
