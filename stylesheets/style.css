@@ -2,6 +2,11 @@ html{
   scroll-behavior: smooth;
 }
 
+/* *{
+  margin: 0px;
+  padding: 0px;
+} */
+
 body{
   font-family: 'Mukta', sans-serif; 
   margin: 0;
@@ -58,6 +63,7 @@ h2, h3, h4{
   align-items: center;
   padding: 15px 0; 
   list-style: none;
+  overflow: hidden;
 }
 
 .nav_item{
@@ -78,9 +84,9 @@ p {
   padding: 0px 30px;
 }
 
-/* div{
+div{
   padding: 0px 15px;
-} */
+}
 
 img {
   display: block;
@@ -124,27 +130,32 @@ footer{
   text-align: center;
 }
 
-  /* text-align: right;} */
-  /* grid-column: 1 / -1;
-  grid-row: 1/1; } */
 
 *:focus{
   border: 2px solid #000000;
 }
 
 
-/* Index Page CSS  */
+/* Home Page CSS  */
 
-.clearfix{
-  overflow:auto;
-  padding: 0px 30px;
+.flex1{
+  /* padding: 20px 40px; */
+  /* max-width: 600px; */
+  display: flex; 
 }
 
-.headshot {
-  /* min-width: 30%; */
-  max-width: 30%;
-  float: right;
+.flex2{
+  align-self: flex-end;
+  padding: 10px;
+  object-fit: cover;
+  width: 300px;
 }
+
+.flex_text{
+  flex: auto 1 1;
+}
+
+/* this helped me with the flex: https://medium.com/@PavelLaptev/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5 */
 
 /* About Page CSS */
 
@@ -169,40 +180,119 @@ footer{
   border-top: 5px solid #a0b4ba;
 }
 
-.form{
+/* .form{
   padding: 0px 20px;
-}  
+}   */
 
+* {
+  box-sizing: border-box;
+}
 
-/* Projects Page CSS  */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a0b4ba;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #67797e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0fc2eb;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #c9dddc;
+  padding: 20px;
+}
+/* research Page CSS  */
 
 #userflow{
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
 }
 
 .projects-bg{
-  background-image: url('../images/blue.jpg');
+  background-image: url('../images/red2.png');
 }
 
+.deepshadow{
+  color: #e5f0f3; ;
+  background-color: #b32424;
+  letter-spacing: .1em;
+  text-shadow:  0 -1px 0 #fff, 
+  0 1px 0 #2e2e2e, 
+  0 2px 0 #2c2c2c, 
+  0 3px 0 #2a2a2a, 
+  0 4px 0 #282828, 
+  0 5px 0 #262626, 
+  0 6px 0 #242424, 
+  0 7px 0 #222, 
+  0 8px 0 #202020, 
+  0 9px 0 #1e1e1e, 
+  0 10px 0 #1c1c1c, 
+  0 11px 0 #1a1a1a, 
+  0 12px 0 #181818, 
+  0 13px 0 #161616, 
+  0 14px 0 #141414, 
+  0 15px 0 #121212, 
+  0 22px 30px rgba(0, 0, 0, 0.9);
+}
 /* Resume Page CSS */
 
-.resume1{
-  display:grid;
-  grid-template-areas: 1fr;
+*{
+  box-sizing: border-box;
 }
 
-#resume2{
-  display:grid;
-  grid-template-columns: auto;
+.column{
+  width: 100%
+  /* height: 300px; */
 }
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+/* figured out how to get text to go into two columns from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns */
 
 #mini{
   padding: 0px 20px;
 }
 
-@media screen and (prefers-reduced-motion: reduce){
+/* design page CSS */
 
+.parallax{
+  background-image: url("../images/weather2.png");
+  /* height: 300%; */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  background-attachment: scroll;
+}
+
+.design{
+  background-image: url('../images/blue.jpg');
+}
+@media screen and (prefers-reduced-motion: reduce){
+  .parallax{
+    background-attachment: fixed;
+  }
 }
 
 @media screen and (min-width: 850px){
@@ -232,6 +322,20 @@ footer{
 
   .nav_item a{
     padding: 10px;
+  }
+
+  .column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .parallax{
+    background-attachment: fixed;
+  }
+
+  .flex1{
+    flex-direction: row;
   }
 }
 
