@@ -179,6 +179,9 @@ footer{
 /* this helped me with the animation https://www.w3schools.com/css/css3_animations.asp */
 /* this helped me with the flex: https://medium.com/@PavelLaptev/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5 */
 
+
+/* help with flip card: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
+
 /* About Page CSS */
 
 #gallery{
@@ -201,6 +204,8 @@ footer{
 #contact{
   border-top: 5px solid #a0b4ba;
 }
+
+
 
 /* .form{
   padding: 0px 20px;
@@ -290,14 +295,11 @@ input[type=submit]:hover {
   clear: both;
 } 
 
-.resume h1, h2{
+.resume h2{
   text-align: left;
 }
 /* figured out how to get text to go into two columns from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns */
 
-#mini{
-  padding: 0px 20px;
-}
 
 /* design page CSS */
 
