@@ -155,6 +155,28 @@ footer{
   flex: auto 1 1;
 }
 
+.home h1{
+  /* width: 100px;
+  height: 100px; */
+  background-color: #e0f2f1;
+  -webkit-animation-name: change;
+  animation-name: change;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+@-webkit-keyframes change{
+  from {background-color: #e0f2f1;}
+  to  {background-color: #b324249f;}
+}
+@keyframes change{
+  from {background-color: #e0f2f1;}
+  to  {background-color: #b324249f;}
+}
+
+/* this helped me with the animation https://www.w3schools.com/css/css3_animations.asp */
 /* this helped me with the flex: https://medium.com/@PavelLaptev/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5 */
 
 /* About Page CSS */
@@ -257,7 +279,8 @@ input[type=submit]:hover {
 }
 
 .column{
-  width: 100%
+  width: 100%;
+  /* text-align: left; */
   /* height: 300px; */
 }
 
@@ -267,6 +290,9 @@ input[type=submit]:hover {
   clear: both;
 } 
 
+.resume h1, h2{
+  text-align: left;
+}
 /* figured out how to get text to go into two columns from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns */
 
 #mini{
@@ -292,6 +318,10 @@ input[type=submit]:hover {
 @media screen and (prefers-reduced-motion: reduce){
   .parallax{
     background-attachment: fixed;
+  }
+
+  .home h1{
+    animation: none;
   }
 }
 
