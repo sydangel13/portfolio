@@ -434,10 +434,6 @@ input[type=submit]:hover {
   .parallax{
     background-attachment: fixed;
   }
-
-  .parallax{
-    background-attachment: scroll;
-  }
 }
 @media print { 
  
