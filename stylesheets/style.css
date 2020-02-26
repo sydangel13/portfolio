@@ -147,22 +147,22 @@ footer{
 
 /* Home Page CSS  */
 
-.flex1{
+/* .flex1{
   /* padding: 20px 40px; */
   /* max-width: 600px; */
-  display: flex; 
-}
+  /* display: flex; 
+} */
 
-.flex2{
-  align-self: flex-end;
-  padding: 10px;
+/* .flex2{
+  align-self: flex-end; */
+  /* padding: 10px;
   object-fit: cover;
-  width: 300px;
-}
+  width: 300px; */
+} */
 
-.flex_text{
+/* .flex_text{
   flex: auto 1 1;
-}
+} */
 
 .home h1{
   /* width: 100px;
@@ -196,7 +196,7 @@ footer{
 #gallery{
   min-height: 100px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   align-items: center; 
   border-top: 5px solid #a0b4ba;
   padding: 15px;
@@ -360,7 +360,46 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (min-width: 850px){
+/* tablets  */
+@media screen and (min-width: 750px){ 
+  #gallery{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  #userflow{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav_links{
+    flex-direction: row;
+    /* text-align: right; */
+  }
+/* 
+  .column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  } */
+
+  .parallax{
+    background-attachment: fixed;
+  }
+
+  .flex1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex2{
+    padding: 10px;
+    object-fit: cover;
+    width: 300px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1025px){
   #gallery{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -370,11 +409,6 @@ input[type=submit]:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* .headshot{
-    display: flex;
-    flex-direction: column;
-  } */
-  /* Navbar */
 
   header{
     flex-direction: row;
@@ -399,11 +433,7 @@ input[type=submit]:hover {
     background-attachment: fixed;
   }
 
-  .flex1{
-    flex-direction: row;
-  }
 }
-
 @media print { 
  
 }
