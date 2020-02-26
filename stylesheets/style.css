@@ -46,6 +46,14 @@ h2, h3, h4{
   text-align: center;
 }
 
+h5, h6{
+  font-size: 2em;
+  line-height: 2;
+  margin: 0 auto;
+  padding: 0px 20px;
+  text-align: center;
+}
+
 /* nav{
   display:flex; 
   flex-direction:column;
@@ -102,6 +110,7 @@ img {
   margin-left: 0;
   /* padding: 0px 30px; */
 }
+
 
 a.skip{
   background: #e0f2f1;
@@ -315,10 +324,13 @@ input[type=submit]:hover {
   background-attachment: scroll;
 }
 
-.parallax h2, h3, p{
-  /* height: 1000px; */
+.design h5, h6{
   background-color: rgba(237, 237, 237, 0.247);
-  font-size: 30px;
+  /* font-size: 30px; */
+}
+
+.design p {
+  background-color: rgba(237, 237, 237, 0.247);
 }
 
 .design{
