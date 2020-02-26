@@ -20,14 +20,9 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   background: #a0b4ba;
 }
-
-/* header p{
-  text-align: center;
-  font-size: 1em;
-} */
 
 h1{ 
   font-size: 1em;
@@ -53,16 +48,6 @@ h5, h6{
   padding: 0px 20px;
   text-align: center;
 }
-
-/* nav{
-  display:flex; 
-  flex-direction:column;
-  justify-content: space-between;
-  background-color: #a0b4ba;
-  padding: 20px 0; 
-  text-align: right;
-  margin-left: auto;
-} */
 
 .nav_links{
   display:flex; 
@@ -116,8 +101,6 @@ a.skip{
   background: #e0f2f1;
   left: 0;
   padding: 6px;
-  /* -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out; */
   z-index: 1;
   top: -60px;
   position: absolute; }
@@ -133,8 +116,8 @@ a.skip:focus{
 footer{
   background-color:#000000;
   color: #ffffff;
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 1/ auto;   /*Can you rewrite it?*/
+  grid-column: 1fr 1fr; 
+  grid-row: 1/ auto;   
   padding: 15px;
   text-align: center;
 }
@@ -147,22 +130,22 @@ footer{
 
 /* Home Page CSS  */
 
-/* .flex1{
-  /* padding: 20px 40px; */
-  /* max-width: 600px; */
-  /* display: flex; 
-} */
+.design h5, h6{
+  background-color: rgba(237, 237, 237, 0.247);
+  /* font-size: 30px; */
+}
 
-/* .flex2{
-  align-self: flex-end; */
-  /* padding: 10px;
-  object-fit: cover;
-  width: 300px; */
-} */
+.design p {
+  background-color: rgba(237, 237, 237, 0.247);
+}
 
-/* .flex_text{
-  flex: auto 1 1;
-} */
+.design{
+  background-image: url('../images/blue.jpg');
+}
+
+.flex2{
+  width: 60%;
+}
 
 .home h1{
   /* width: 100px;
@@ -395,6 +378,7 @@ input[type=submit]:hover {
     background-attachment: fixed;
   }
 
+
   .flex1{
     display: flex;
     flex-direction: row;
@@ -451,6 +435,9 @@ input[type=submit]:hover {
     background-attachment: fixed;
   }
 
+  .parallax{
+    background-attachment: scroll;
+  }
 }
 @media print { 
  
