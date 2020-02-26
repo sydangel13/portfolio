@@ -375,12 +375,12 @@ input[type=submit]:hover {
     flex-direction: row;
     /* text-align: right; */
   }
-/* 
+
   .column{
     float: left;
     width: 50%;
     padding: 10px;
-  } */
+  } 
 
   .parallax{
     background-attachment: fixed;
@@ -422,11 +422,11 @@ input[type=submit]:hover {
   .nav_item a{
     padding: 10px;
   }
-
   .column{
     float: left;
     width: 50%;
     padding: 10px;
+
   }
 
   .parallax{
