@@ -113,7 +113,7 @@ a.skip:focus{
   border: 2px solid #000000; }
 
 footer{
-  background-color:#000000;
+  background-color:#6f7274f3;
   color: #ffffff;
   grid-column: 1fr 1fr; 
   grid-row: 1/ auto;   
@@ -128,6 +128,20 @@ footer{
 
 
 /* Home Page CSS  */
+
+
+.flex1{
+  display: inline-block;
+  float: none;
+}
+
+.flex2{
+  text-align: center;
+}
+
+.flex_text{
+  text-align: center;
+}
 
 .design h5, h6{
   background-color: rgba(237, 237, 237, 0.247);
@@ -160,47 +174,83 @@ footer{
 
 @-webkit-keyframes change{
   from {background-color: #e0f2f1;}
-  to  {background-color: #b324249f;}
+  to  {background-color: #a0b4baab;}
 }
 @keyframes change{
   from {background-color: #e0f2f1;}
-  to  {background-color: #b324249f;}
+  to  {background-color: #a0b4baab;}
 }
 
 /* this helped me with the animation https://www.w3schools.com/css/css3_animations.asp */
 /* this helped me with the flex: https://medium.com/@PavelLaptev/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5 */
 
 
-/* help with flip card: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
 
 /* About Page CSS */
 
 #gallery{
-  min-height: 100px;
+  /* min-height: 100px; */
+  min-height: 120px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   align-items: center; 
+  /* margin-left: auto;
+  margin-right: auto; */
   border-top: 5px solid #a0b4ba;
   padding: 15px;
+  grid-row-gap: 20px;
   /* flex-direction: column; */
 }
 
-#gallery > img{
+#gallery img{
   margin: 0 auto;
-  width: 100px;
-  display: block;
-  padding: 5px
+  width: 90%;
+  /* display: block; */
+  padding: 5px;
 }
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+} 
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #a0b4ba;
+}
+
+.flip-card-back {
+  background-color: #a0b4ba;
+  color:#ffffff;
+  transform: rotateY(180deg);
+} 
 
 #contact{
   border-top: 5px solid #a0b4ba;
 }
-
-
-
-/* .form{
-  padding: 0px 20px;
-}   */
 
 * {
   box-sizing: border-box;
@@ -341,6 +391,13 @@ input[type=submit]:hover {
   .home h1{
     animation: none;
   }
+
+  .flip-card-back, .flip-card-inner, .flip-card:hover{
+    -webkit-backface-visibility: 0 !important;
+    backface-visibility: 0 !important;
+  }
+
+  /* found reduced motion here: https://codepen.io/marcysutton/pen/ejmYEG */
 }
 
 /* tablets  */
@@ -357,6 +414,17 @@ input[type=submit]:hover {
   #gallery{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   }
 
   #userflow{
@@ -381,59 +449,73 @@ input[type=submit]:hover {
 
   .flex1{
     display: flex;
-    flex-direction: row;
+    /* padding: 20px; */
+    /* max-width: 1025px; */
+    /* border: 3px solid #376472; */
+    /* flex-direction: column; */
   }
 
   .flex2{
     padding: 10px;
-    object-fit: cover;
+    object-fit: contain;
     width: 300px;
+    align-self: flex-start;
+    margin: 20px 30px 0 0;
+  }
+
+  .flex_text{
+    -webkit-box-flex: 1;
+    flex: auto;
   }
 }
 
 /* desktop */
 @media screen and (min-width: 1025px){
-  body{
+  /* body{
     font-size: 1.2em;
   }
 
   h1, h2, h3, h4, h5, h6{
     font-size: 2em;
-  }
+  } */
 
   #gallery{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
   }
 
-  #userflow{
-    grid-template-columns: 1fr 1fr;
+  #gallery img{ 
+    border: 2px solid #000000;
   }
+
+  /* #userflow{
+    grid-template-columns: 1fr 1fr;
+  } */
 
 
   header{
     flex-direction: row;
   }
 
-  .nav_links{
+  /* .nav_links{
     flex-direction: row;
     /* text-align: right; */
-  }
+  } */
 
   .nav_item a{
     padding: 10px;
   }
 
-  .column{
+  /* .column{
     float: left;
     width: 50%;
     padding: 10px;
 
-  }
+  } */
 
-  .parallax{
+  /* .parallax{
     background-attachment: fixed;
-  }
+  } */
 }
 @media print { 
  
