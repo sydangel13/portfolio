@@ -15,7 +15,6 @@ body{
   /*background-image: url('../images/grainy_background.jpg');*/
 }
 
-
 header{
   display: flex;
   flex-direction: column;
@@ -49,7 +48,7 @@ h5, h6{
   text-align: center;
 }
 
-.nav_links{
+/* .nav_links{
   display:flex; 
   flex-direction:column;
   justify-content: space-between;
@@ -57,10 +56,32 @@ h5, h6{
   padding: 15px 0; 
   list-style: none;
   overflow: hidden;
-}
+} */
 
 .nav_item{
   padding-right: 20px;
+}
+
+
+nav label{
+  display: inline-block;
+  color: #ffffff;
+  background: #a0b4ba;
+  font-size: 1.8em;
+  padding: 10px;
+}
+
+nav ul li{
+  display: block;
+  /* border-top: 1px solid #333; */
+}
+
+nav ul{
+  display: none;
+}
+
+nav input:checked ~ ul{
+  display: block;
 }
 
 nav a{
@@ -79,7 +100,9 @@ nav a:hover{
   color: white;;
 } */
 
-.nav_item a:active{
+
+/* .nav_links .nav.item{ */
+.nav_item a.selected:link a.selected:visited{
   background-color:  #1a3bf1;
   color: white;
 }
@@ -465,6 +488,27 @@ input[type=submit]:hover {
     font-size: 2em;
   }
 
+  /* Hide Hamburger */
+  nav label, #hamburger {
+    display: none;
+  }
+  
+  /* Menu Items */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+
   #gallery{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -486,6 +530,13 @@ input[type=submit]:hover {
   }
 
   .nav_links{
+    display:flex; 
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; 
+    list-style: none;
+    overflow: hidden;
     flex-direction: row;
     /* text-align: right; */
   }
