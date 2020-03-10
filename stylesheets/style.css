@@ -71,6 +71,11 @@ nav a{
 
 nav a:hover{
   text-decoration: underline;
+  color: #ffffff;
+}
+
+.nav_links .nav_item .active{
+  color: #26f0e6;
 }
 
 p {
@@ -160,7 +165,7 @@ footer{
   width: 60%;
 }
 
-.home h1{
+.home,.resume h1{
   /* width: 100px;
   height: 100px; */
   background-color: #e0f2f1;
@@ -187,6 +192,27 @@ footer{
 
 
 /* About Page CSS */
+
+.about h1{
+  background-color: #e0f2f1;
+  -webkit-animation-name: change;
+  animation-name: change;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+@-webkit-keyframes change{
+  from {background-color: #e0f2f1;}
+  to  {background-color: #a0b4baab;}
+}
+@keyframes change{
+  from {background-color: #e0f2f1;}
+  to  {background-color: #a0b4baab;}
+}
+
+/* note i did not put the about change in animation with the other two because it was creating an error -- i know it is a little redundant  */
 
 #gallery{
   /* min-height: 100px; */
@@ -320,6 +346,7 @@ input[type=submit]:hover {
   0 22px 30px rgba(0, 0, 0, 0.9);
 }
 /* Resume Page CSS */
+
 
 *{
   box-sizing: border-box;
