@@ -69,6 +69,8 @@ nav label{
   background: #a0b4ba;
   font-size: 1.8em;
   padding: 10px;
+  /* float: right; */
+  top: -87px;
 }
 
 nav ul li{
@@ -95,6 +97,7 @@ nav a:hover{
   color: #ffffff;
 }
 
+/* hamburger menu: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
 /* nav a.active{
   background-color: green;
   color: white;;
@@ -503,7 +506,7 @@ input[type=submit]:hover {
     display: inline-block;
     padding: 10px;
     box-sizing: border-box;
-    border-top: 1px solid #333; 
+    /* border-top: 1px solid #333;  */
   }
   nav ul li a {
     color: #000000;
