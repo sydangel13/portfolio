@@ -108,7 +108,8 @@ html{
     padding: 6px;
     z-index: 1;
     top: -60px;
-    position: absolute; }
+    position: absolute; 
+  }
   
   
   a.skip:focus{
@@ -116,17 +117,17 @@ html{
     /* overflow: visible; */ 
     top: 0; 
     text-align: center;
-    border: 2px solid #000000; }
+    border: 2px solid #000000; 
+  }
   
   footer{
     background-color:#6f7274f3;
     color: #000000;
     grid-column: 1fr 1fr; 
     grid-row: 1/ auto;   
-    padding: 15px;
+    padding: 10px;
     text-align: center;
   }
-  
   
   *:focus{
     border: 2px solid #000000;
