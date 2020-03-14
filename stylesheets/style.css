@@ -466,9 +466,11 @@ html{
       animation: none;
     }
   
-    .flip-card-back, .flip-card-inner, .flip-card:hover{
-      -webkit-backface-visibility: 0 !important;
-      backface-visibility: 0 !important;
+    .flip-card:hover .flip-card-inner{
+      -webkit-backface-visibility: none !important;
+      backface-visibility: none !important;
+      transition: none !important;
+      transform: none !important;
     }
 
 
