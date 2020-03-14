@@ -74,10 +74,10 @@ html{
     color: #ffffff;
   }
   
-  .nav_item a.selected:link a.selected:visited{
+  /* .nav_item a.selected:link a.selected:visited{
     background-color:  #1a3bf1;
     color: white;
-  }
+  } */
 
   .nav_links .current{ 
     color: #340aee;
@@ -136,7 +136,7 @@ html{
     padding: 10px;
     text-align: center;
   }
-  
+
   *:focus{
     border: 2px solid #000000;
   }
