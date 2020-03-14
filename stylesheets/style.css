@@ -80,7 +80,7 @@ html{
   }
 
   .nav_links .current{ 
-    color: #ffffff;
+    color: #340aee;
     font-size: 1.4em;
     font-style: oblique;
   }
@@ -285,7 +285,7 @@ html{
   
   .flip-card-back {
     background-color: #a0b4ba;
-    color:#ffffff;
+    color:#000000;
     transform: rotateY(180deg);
   } 
   
