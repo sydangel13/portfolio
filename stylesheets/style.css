@@ -480,7 +480,6 @@ html{
       transform: none !important;
     }
 
-
   .design h1{
     -webkit-animation: none;
     animation: none;
@@ -525,7 +524,9 @@ html{
     }
 
     #gallery img:hover{
+      visibility: visible;
       opacity: .5;
+      transition: opacity 0.3s, visibility 0.3s;
     }
 
     #gallery img{
