@@ -238,10 +238,14 @@ html{
   
   #gallery img{
     margin: 0 auto;
+    display: block;
+    /* text-align: center; */
+    /* position: absolute; */
     width: 90%;
     /* display: block; */
     padding: 5px;
   }
+
   
   .flip-card {
     background-color: transparent;
