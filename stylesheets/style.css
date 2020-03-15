@@ -132,8 +132,6 @@ html{
   footer{
     background-color:#6f7274f3;
     color: #000000;
-    grid-column: 1fr 1fr; 
-    grid-row: 1/ auto;   
     padding: 10px;
     text-align: center;
   }
