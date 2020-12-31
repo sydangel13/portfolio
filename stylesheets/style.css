@@ -80,7 +80,7 @@ html{
     padding-left: 20px;
     color: #1565b1;
     text-decoration: none;
-    font-style: bolder;
+    /* font-style: bolder; */
     font-size: 25px;
    }
 
@@ -274,11 +274,11 @@ html{
     }
 
     .propic{
-      padding-top: 100px;
+      padding-top: 90px;
     }
   
     .propic >img{
-      width: 400px;
+      width: 315px;
     }
 
     }
