@@ -50,21 +50,14 @@ html{
     padding: 0px 20px;
     text-align: center;
   }
-  
-  h5, h6{
-    font-size: 1.5em;
-    line-height: 2;
-    margin: 0 auto;
-    padding: 0px 20px;
-    text-align: center;
-  }
+
   
   .nav_links{
     display:flex; 
     flex-direction:column;
-    align-items: none;
+    align-items: center;
     list-style: none;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .nav_links a{
@@ -75,7 +68,7 @@ html{
 
   .nav_links .current{ 
     color: #00838f; 
-    font-style: oblique;
+    font-style: bolder;
     text-transform: uppercase;
   }
 
@@ -84,16 +77,17 @@ html{
     padding-right: 20px;
   } */
   
-  nav a{
+  /* nav a{
     color: #000000;
     font-weight: bold;
     text-decoration: none; 
-  }
+  } */
   
   nav a:hover{
     text-decoration: underline;
   }
   
+
   
   p {
     padding: 0px 30px;
