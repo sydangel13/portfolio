@@ -15,7 +15,13 @@ html{
     /*background-image: url('../images/grainy_background.jpg');*/
   }
   
-  
+  header img{
+    padding-left: 20px;
+    width: 60px;
+    float: left;
+  }
+
+
   header{
     display: flex;
     flex-direction: column;
@@ -25,7 +31,7 @@ html{
   }
   
   h1{ 
-    font-size: 1.8em;
+    font-size: 60px;
     line-height: 2;
     margin: 0 auto;
     padding: 0px 20px;
@@ -34,7 +40,7 @@ html{
   } 
   
   h2, h3, h4{
-    font-size: 1.5em;
+    font-size: 45px;
     line-height: 2;
     margin: 0 auto;
     padding: 0px 20px;
@@ -52,13 +58,23 @@ html{
   .nav_links{
     display:flex; 
     flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0; 
+    align-items: none;
     list-style: none;
     overflow: hidden;
   }
   
+  .nav_links a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+
+  .nav_links .current{ 
+    color: #00838f; 
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+
   .nav_item{
     padding-right: 20px;
   }
@@ -74,18 +90,7 @@ html{
     color: #ffffff;
   }
   
-  /* .nav_item a.selected:link a.selected:visited{
-    background-color:  #1a3bf1;
-    color: white;
-  } */
-
-  .nav_links .current{ 
-    color: #340aee;
-    font-size: 1.4em;
-    font-style: oblique;
-  }
   
-  /* #with the addition of current, i am unable to format the keyboard box around the current nav item  */
   p {
     padding: 0px 30px;
   }
@@ -110,7 +115,7 @@ html{
   
   
   a.skip{
-    background: #e0f2f1;
+    background: #ffffff;
     left: 0;
     padding: 6px;
     z-index: 1;
@@ -118,13 +123,14 @@ html{
     position: absolute; 
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out; 
+    overflow: hidden;
   }
   
   
-  a.skip:focus{
-    position: relative; 
-    /* overflow: visible; */ 
+  a.skip:focus, a.skip:active{
+    overflow: visible;
     top: 0; 
+    left:0;
     text-align: center;
     border: 2px solid #000000; 
   }
