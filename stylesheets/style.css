@@ -3,11 +3,6 @@ html{
     position: relative;
   }
   
-  /* *{
-    margin: 0px;
-    padding: 0px;
-  } */
-  
   body{
     font-family: 'Mukta', sans-serif; 
     /* margin: 0;
@@ -22,9 +17,12 @@ html{
   }
 
   .name{
+    padding-top: 15px;
     padding-left: 20px;
     color: #00838f;
-  }
+    text-decoration: none;
+    font-style: bolder;
+   }
 
   /* header{
     display: flex;
@@ -44,7 +42,7 @@ html{
   } 
   
   h2, h3, h4{
-    font-size: 45px;
+    font-size: 70px;
     line-height: 2;
     margin: 0 auto;
     padding: 0px 20px;
@@ -67,50 +65,24 @@ html{
   }
 
   .nav_links .current{ 
-    color: #00838f; 
+    color: #08419C; 
     font-style: bolder;
     text-transform: uppercase;
   }
 
 
-  /* .nav_item{
+  .nav_item{
     padding-right: 20px;
-  } */
-  
-  /* nav a{
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none; 
-  } */
+  } 
   
   nav a:hover{
     text-decoration: underline;
   }
   
-
-  
-  p {
-    padding: 0px 30px;
-  }
-  
   div{
     padding: 0px 15px;
   }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    padding: 5px;
-  }
-  
-  #logo{
-    max-width: 300px;
-    height: auto;
-    margin-left: 0;
-  }
-  
+
   
   a.skip{
     background: #ffffff;
@@ -150,514 +122,48 @@ html{
     margin-right: 15px;
   }
 
-  *:focus{
-    border: 2px solid #000000;
-  }
   
   
   /* Home Page CSS  */
   
   
-  .flex1{
-    display: inline-block;
-    float: none;
-  }
-  
-  .flex2{
-    text-align: center;
-  }
-  
-  .flex_text{
-    text-align: left;
-  }
-  
-  .design h5, h6{
-    background-color: rgba(237, 237, 237, 0.247);
-    /* font-size: 30px; */
-  }
-  
-  .design p {
-    background-color: rgba(237, 237, 237, 0.247);
-  }
-  
-  .design{
-    background-image: url('../images/blue.jpg');
-  }
-  
-  .flex2{
-    width: 60%;
-  }
-  
-  .home h1{
-    /* width: 100px;
-    height: 100px; */
-    background-color: #e0f2f1;
-    -webkit-animation-name: change;
-    animation-name: change;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2;
-  }
-  
-  @-webkit-keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-  }
-  @keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-  }
-  
-  /* this helped me with the animation https://www.w3schools.com/css/css3_animations.asp */
-  /* this helped me with the flex: https://medium.com/@PavelLaptev/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5 */
-  
-  
-  
   /* About Page CSS */
-  
-  .about h1{
-    background-color: #e0f2f1;
-    -webkit-animation-name: change;
-    animation-name: change;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2;
-  }
-  
-  @-webkit-keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-  }
-  @keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-  }
-  
-  /* note i did not put the about change in animation with the other two because it was creating an error -- i know it is a little redundant  */
-  
-  .about h2{
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: .05em;
-    animation: typing 4.5s steps(40, end);
-    -webkit-animation: typing 5.5s steps(40, end);
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-  @-webkit-keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-
-  #gallery{
-    min-height: 120px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;  
-    border-top: 5px solid #a0b4ba;
-    padding: 15px;
-    font-size: 15px;
-    grid-row-gap: 20px;
-    /* flex-direction: column; */
-  }
-  
-  #gallery img{
-    margin: 0 auto;
-    height: 350px;
-    width: 250px;
-    /* display: block; */
-    padding: 5px;
-    border: 5px solid #000000;
-  }
-
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 350px;
-  } 
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 12px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-card:focus .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #a0b4ba;
-  }
-  
-  .flip-card-back {
-    background-color: #a0b4ba;
-    color:#000000;
-    transform: rotateY(180deg);
-  } 
-  
-  #contact{
-    border-top: 5px solid #a0b4ba;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #a0b4ba;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #67797e;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #0fc2eb;
-  }
-  
-  .form {
-    border-radius: 5px;
-    background-color: #c9dddc;
-    padding: 20px;
-  }
-  /* research Page CSS  */
-  
-  #userflow{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .projects-bg{
-    background-image: url('../images/red2.png');
-  }
-  
-  .deepshadow{
-    color: #e5f0f3; ;
-    background-color: #b32424;
-    padding: 8px;
-    letter-spacing: .1em;
-    text-shadow:  0 -1px 0 #fff, 
-    0 1px 0 #2e2e2e, 
-    0 2px 0 #2c2c2c, 
-    0 3px 0 #2a2a2a, 
-    0 4px 0 #282828, 
-    0 5px 0 #262626, 
-    0 6px 0 #242424, 
-    0 7px 0 #222, 
-    0 8px 0 #202020, 
-    0 9px 0 #1e1e1e, 
-    0 10px 0 #1c1c1c, 
-    0 11px 0 #1a1a1a, 
-    0 12px 0 #181818, 
-    0 13px 0 #161616, 
-    0 14px 0 #141414, 
-    0 15px 0 #121212, 
-    0 22px 30px rgba(0, 0, 0, 0.9);
-  }
-  /* Resume Page CSS */
-  
-  .resume h1{
-    background-color: #e0f2f1;
-    -webkit-animation-name: change;
-    animation-name: change;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2;
-    }
-
-  @-webkit-keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-    }   
-  @keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-    } 
-
-  @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-  
-  @-webkit-keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    
-  *{
-    box-sizing: border-box;
-  }
-  
-  .column{
-    width: 100%;
-    /* text-align: left; */
-    /* height: 300px; */
-  }
-  
-  .row:after{
-    content: "";
-    display: table;
-    clear: both;
-  } 
-  
-  .resume h2{
-    text-align: left;
-  }
-  /* figured out how to get text to go into two columns from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns */
-  
-  
-  /* design page CSS */
-  
-    
-  .design h1{
-    background-color: #e0f2f1;
-    -webkit-animation-name: change;
-    animation-name: change;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2;
-    }
-
-   @-webkit-keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-    }
-
-   @keyframes change{
-    from {background-color: #e0f2f1;}
-    to  {background-color: #a0b4baab;}
-    }  
-
-  .parallax{
-    background-image: url("../images/weather2.png");
-    min-height: 500px;
-    /* height: 300%; */
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    background-attachment: scroll;
-  }
-  
-  .design h5, h6{
-    background-color: rgba(237, 237, 237, 0.247);
-    /* font-size: 30px; */
-  }
-  
-  .design p {
-    background-color: rgba(237, 237, 237, 0.247);
-  }
-  
-  .design{
-    background-image: url('../images/blue.jpg');
-  }
-  /* 
-  .design h2, h3{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: #2E2E2E;
-    background-color: #EDEDED;
-  }
-  .design p{
-    background-color: #EDEDED;
-    color: #2E2E2E;
-  } */
   
   
   /* tablets  */
   @media screen and (min-width: 850px){ 
   
     body{
-      font-size: 1.2em;
+      font-size: 30px;
     }
   
     h1, h2, h3, h4, h5, h6{
-      font-size: 2em;
-    }
-  
-    #gallery{
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
+      font-size: 20px;
     }
 
-    #gallery img:hover{
-      visibility: visible;
-      opacity: .5;
-      transition: opacity 0.3s, visibility 0.3s;
-    }
-
-    #gallery img{
-      border: 4px solid #505c5f;
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      font-size: 11px;
-      transition: transform 1.0s;
-      transform-style: preserve-3d;
-      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    } 
-
-    .flip-card-front {
-      background-color: #fff;
-    }
-
-    #userflow{
-      grid-template-columns: 1fr 1fr;
-    }
-  
     .nav_links{
       flex-direction: row;
+      justify-content: center;
       /* text-align: right; */
     }
-  
-    .column{
-      float: left;
-      width: 50%;
-      padding: 10px;
-    } 
-  
-    .parallax{
-      background-attachment: fixed;
+    
+    .nav_links .nav_item{
+      padding-right: 20px;
+      padding-top: 15px;
     }
-  
-  
-    .flex1{
-      display: flex;
-      /* padding: 20px; */
-      /* max-width: 1025px; */
-      /* border: 3px solid #376472; */
-      /* flex-direction: column; */
-    }
-  
-    .flex2{
-      padding: 10px;
-      object-fit: contain;
-      width: 300px;
-      align-self: flex-start;
-      margin: 20px 30px 0 0;
-    }
-  
-    .flex_text{
-      -webkit-box-flex: 1;
-      flex: auto;
-    }
-  }
+
   
   /* desktop */
   @media screen and (min-width: 1025px){
 
-    #gallery{
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto;
-    }
-  
-    #gallery img{ 
-      border: 2px solid #000000;
-    }
-  
-    #gallery img:hover{
-      opacity: 100%;
+    .nav_links{
+      flex-direction:row;
+      justify-content: flex-end;
     }
   
     header{
       flex-direction: row;
     }
   
-    .nav_item a{
-      padding: 10px;
-    }
-  
     @media screen and (prefers-reduced-motion: reduce){
-      .parallax{
-        background-attachment: fixed;
-        background-position: center;
-      }
-    
-      .home h1{
-        -webkit-animation: none;
-        animation: none;
-      }
-    
-      .flip-card:hover .flip-card-inner{
-        -webkit-backface-visibility: none !important;
-        backface-visibility: none !important;
-        transition: none !important;
-        transform: none !important;
-      }
-  
-    .design h1{
-      -webkit-animation: none;
-      animation: none;
-    }
-  
-    .resume h1{
-      -webkit-animation: none;
-      animation: none; 
-    }
-  
-    .about h1{
-      -webkit-animation: none;
-      animation: none;
-    }
-  
-    .about h2{ 
-      -webkit-animation: none;
-      animation: none;
-    }
-    html{
-      scroll-behavior: auto;
-    }
-      
-    a.skip{
-      -webkit-transition: none;
-      transition: none; 
-    }
-  
-      /* found reduced motion here: https://codepen.io/marcysutton/pen/ejmYEG */
     }
