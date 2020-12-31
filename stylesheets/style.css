@@ -5,11 +5,20 @@ html{
   
   body{
     font-family: 'Mukta', sans-serif; 
-    /* margin: 0;
-    padding: 0;
-    font-size: 1.0em; */
+    font-size: 16px;
   }
   
+  p{
+    font-size: 20px;
+  }
+  .header{
+    font-size: 25px;
+  }
+
+  .header2{
+    font-size: 20px;
+  }
+
   header img{
     padding-left: 20px;
     width: 60px;
@@ -21,13 +30,13 @@ html{
     flex-direction:column;
     align-items: center;
     list-style: none;
+    font-size: 20px;
     /* overflow: hidden; */
   }
   
   .nav_links a{
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
   }
 
   .nav_links .current{ 
@@ -67,38 +76,20 @@ html{
   }
 
   .name{
-    padding-top: 15px;
     padding-left: 20px;
     color: #00838f;
     text-decoration: none;
     font-style: bolder;
+    font-size: 25px;
    }
 
-  /* header{
+  header{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background: #ffffff;
-  } */
-  
-  h1{ 
-    font-size: 60px;
-    line-height: 2;
-    margin: 0 auto;
-    padding: 0px 20px;
-    text-align: center;
-    border-bottom: 5px solid #a0b4ba;
-  } 
-  
-  h2, h3, h4{
-    font-size: 70px;
-    line-height: 2;
-    margin: 0 auto;
-    padding: 0px 20px;
-    text-align: center;
   }
-
   
  
   div{
@@ -133,6 +124,7 @@ html{
     background-color:#ffffff;
     color: #000000;
     text-align: center;
+    font-size: 16px;
   }
 
   .foot{
@@ -144,39 +136,132 @@ html{
     margin-right: 15px;
   }
 
-  
-  
-  /* Home Page CSS  */
-  
+
   
   /* About Page CSS */
+  
+  .pro-pic{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    /* padding-top: 15px; */
+}
+
+.propic> img{
+  width: 300px;
+}
+
+.propic{
+  grid-column: 1fr;
+  /* margin-top: 50px; */
+  margin-left: 10px;
+}
+
+  .about h1{
+    background-color: #e0f2f1;
+    -webkit-animation-name: change;
+    animation-name: change;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+  }
+  
+  @-webkit-keyframes change{
+    from {background-color: #e0f2f1;}
+    to  {background-color: #a0b4baab;}
+  }
+  @keyframes change{
+    from {background-color: #e0f2f1;}
+    to  {background-color: #a0b4baab;}
+  }
+  
+  /* note i did not put the about change in animation with the other two because it was creating an error -- i know it is a little redundant  */
+  
+  .about h2{
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    animation: typing 4.5s steps(40, end);
+    -webkit-animation: typing 5.5s steps(40, end);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
   
   
   /* tablets  */
   @media screen and (min-width: 850px){ 
   
     body{
-      font-size: 30px;
+      font-size: 16px;
     }
   
-    h1, h2, h3, h4, h5, h6{
-      font-size: 20px;
-    }
+    .header{
+    font-size: 30px;
+  }
 
+  .header2{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 25px;
+  }
     .nav_links{
       flex-direction: row;
       justify-content: center;
+      margin-left: 15px;
       /* text-align: right; */
     }
-    
+
     .nav_links .nav_item{
       padding-right: 20px;
-      padding-top: 15px;
     }
 
+    footer{
+      font-size: 13px;
+    }
+
+    .pro-pic{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-template-rows: 1fr;
+      padding-left: 15px;
+    }
+  
+    .propic{
+      padding-top: 75px;
+    }
+
+    .propic > img{
+      width: 350px;
+    }
+      /* padding-top: 15px; */
+  }
   
   /* desktop */
   @media screen and (min-width: 1025px){
+
+    body{
+      font-size: 30px;
+    }
+  
+    .header{
+      font-size: 40px;
+    }
+  
+    .header2{
+      font-size: 25px;
+    }
 
     .nav_links{
       flex-direction:row;
@@ -186,6 +271,15 @@ html{
     header{
       flex-direction: row;
     }
+
+    .propic{
+      padding-top: 100px;
+    }
   
+    .propic >img{
+      width: 400px;
+    }
+
+    }
     @media screen and (prefers-reduced-motion: reduce){
     }

@@ -14,41 +14,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
         <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
-        <title>About Sydney</title>
+        <title>Sydney Angel</title>
     </head>
     <body>
-        <a class="skip" href="#skip">Skip to Main</a>
+        <a class="skip" href="#main">Skip to Main</a>
         <header>
-            <img src="images/logo.png" alt="u of m logo" id = "logo">
+            <div class = "identity">
+                <a class = "name" href="index">Sydney Angel</a>
+            </div>
             <nav>
-                <!-- <label for ="hamburger">&#9776;</label>
-                <input type = "checkbox" id="hamburger"/> -->
                 <ul class="nav_links">
-                    <li class="nav_item"><a href="index">Home</a></li>
-                    <li class="nav_item"><a href="resume"> Resume</a></li>
-                    <li class="nav_item"><a class="current">About Me</a></li>
-                    <li class="nav_item"><a href="research">UX Research</a></li>
-                    <li class="nav_item"><a href="design">Graphic Design</a></li>
+                    <li class="nav_item"><a href="index">Work</a></li>
+                    <li class="nav_item"><a href="Sydney_Angel_resume.pdf" target = "_blank" rel="noopener noreferrer"> Resume</a></li>
+                    <li class="nav_item"><a a class="current" a href="about">About</a></li>
                 </ul>
             </nav>
         </header>
         <main class = "about" id="skip">
-        <h1> About Sydney </h1>
-            <p> I am a first year Master's student at the University of Michigan studying User Experience Research and Design with a primary focus in research and content strategy.<br>
-                <br>
-                I am incredibly passionate about creating digital content that is easily accessible to all types of users, through empathetic design solutions and personal adaptability. 
-                Ultimately, I hope to plan and develop clear, relevant content that aligns with the users' needs, as well as the business' goals.
-                I strive to accomplish this through fleshed-out research and analysis. </p>
-                
-            <p> I previously graduated from the University of Michigan, where I double-majored in Biopsychology, Cognition and Neuroscience and Cognitive Science with a focus in decision-making. 
-            </p>
-                
-            <p>In my free time I enjoy playing with my six month old golden-doodle, watching Broadway musicals, hiking through national parks and listening to True Crime podcasts. In the gallery below you can see a photo of my puppy, Tucker, taken over Thanksgiving break. Some photos from previous family vacations/trips and multiple photos of me. 
-                with my friends, including my halloween costume from 2018 when I dressed up as Barry B. Benson. One important thing to know about me is that I am incredibly passionate
-                about the Bee Movie and have seen it at least twenty times. </p>
-
+        <section class = "pro-pic">
+            <div class = "propic"> <img src="images/headshot.jpg" alt = "A headshot of myself from 2016."></div>
+            <div class = "content">
+                <div class = "title">
+                    <h2 class = header2>Hey there, I'm <span style ="color:#089C55">Sydney!</span></h2>
+                </div>
+            <div class = "about_me">
+                <p>I am a second-year Master's student at the University of Michigan School of Information studying User Experience Research and Human Computer Interaction.</p>
+                <p>I previously graduated from the University of Michigan, where I double-majored in Biopsychology, Cognition and Neuroscience and Cognitive Science with a focus in decision-making.</p>
+                <p>I am incredibly passionate about creating digital content that is easily accessible to all types of users, through empathetic design solutions and data-driven results. 
+                    Ultimately, I hope to plan and develop clear, relevant content that aligns with the users' needs, as well as the business' goals.
+                    I strive to accomplish this through fleshed-out research and analysis. </p>
+                <p>In my free time I enjoy playing with my six month old golden-doodle, watching Broadway musicals, hiking through national parks and listening to True Crime podcasts. </p>
+            </div>
+        </section>
+    
             
-        <div>
+        <!-- <div>
             <h2>Sydney's Photo Gallery</h2>
             <div id="gallery">
                 <div class = "flip-card" tabindex="0">
@@ -156,8 +156,8 @@
         <div id="contact">
             <p>If you want to get in contact with me, please fill out the form below:</p>
             <div class ="form">
-                    <!-- target = "_blank" method = "post" -->
-                <form action="https://formspree.io/sydangel@umich.edu" method = "POST">
+                    target = "_blank" method = "post" -->
+                <!-- <form action="https://formspree.io/sydangel@umich.edu" method = "POST">
                     <label for ="first">First Name:</label>
                     <input type="text" id ="first" name="fname" placeholder="First name"/> 
                 
@@ -176,13 +176,16 @@
                     <input type = "submit" value="Submit">
                 </form>
             </div>
-        </div>
+        </div> -->
         </main>
         <footer>
-            <p> Created by Sydney Angel 2020 <br/> 
-                SI 539 Web Design <br/>
-                <a href = "mailto:sydangel@umich.edu" class = "emailink"> sydangel@umich.edu </a> 
-            </p>
+            <div class ="foot">
+                    <ul id = "footer-table">
+                            <li>Created by Sydney Angel 2020</li>
+                            <li><a href = "mailto: sydangel@umich.edu" target = "_blank" rel="noopener noreferrer">Email</a></li>
+                            <li><a href = "https://www.linkedin.com/in/sydangel/" target = "_blank" rel="noopener noreferrer"> LinkedIn</a></li>
+                    </ul>
+            </div>
         </footer>
     </body>
 </html>
