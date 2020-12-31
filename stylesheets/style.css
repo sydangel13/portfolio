@@ -4,7 +4,7 @@ html{
   }
   
   body{
-    font-family: 'Mukta', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
     font-size: 16px;
   }
   
@@ -31,6 +31,7 @@ html{
     align-items: center;
     list-style: none;
     font-size: 20px;
+    text-transform: lowercase;
     /* overflow: hidden; */
   }
   
@@ -40,8 +41,8 @@ html{
   }
 
   .nav_links .current{ 
-    color: #08419C; 
-    font-style: bolder;
+    color: #000000; 
+    font-weight: bolder;
     text-transform: uppercase;
   }
 
