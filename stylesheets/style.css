@@ -137,8 +137,66 @@ html{
     margin-right: 15px;
   }
 
-
+  #gallery{
+    /* min-height: 100px; */
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; 
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-top: 5px solid #a0b4ba;
+    padding: 15px;
+    grid-row-gap: 15px;
+    /* flex-direction: column; */
+  }
   
+  #gallery img{
+    margin: 0 auto;
+    width: 90%;
+    /* display: block; */
+    padding: 5px;
+  }
+
+  .flip-card{
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    border: 1px sold #000000;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front{
+    background-color: transparent;
+    color: white;
+  }
+
+  .flip-card-back{
+    background-color: dodgerblue;
+    color: black;
+    transform: rotateY(180deg);
+  }
   /* About Page CSS */
   
   .pro-pic{
@@ -178,7 +236,6 @@ html{
     to  {background-color: #a0b4baab;}
   }
   
-  /* note i did not put the about change in animation with the other two because it was creating an error -- i know it is a little redundant  */
   
   .about h2{
     overflow: hidden;
@@ -200,7 +257,7 @@ html{
   
   
   /* tablets  */
-  @media screen and (min-width: 850px){ 
+  @media screen and (min-width: 750px){ 
   
     body{
       font-size: 16px;
@@ -249,6 +306,20 @@ html{
       /* padding-top: 15px; */
   }
   
+  #gallery{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
   /* desktop */
   @media screen and (min-width: 1025px){
 
@@ -281,6 +352,26 @@ html{
       width: 315px;
     }
 
+    #gallery{
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    } 
+  
+    #gallery img{ 
+      border: 2px solid #000000;
+    }
+
     }
     @media screen and (prefers-reduced-motion: reduce){
+    
+
+    .flip-card-back, .flip-card-inner, .flip-card:hover{
+      -webkit-backface-visibility: 0 !important;
+      backface-visibility: 0 !important;
     }
+
+    html{
+      scroll-behavior: auto;
+    }
+  }
+  
