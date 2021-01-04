@@ -141,7 +141,7 @@ html{
     /* min-height: 100px; */
     display: flex;
     flex-wrap: wrap;
-    border-top: 5px solid #a0b4ba;
+    border-top: 5px solid #1565b1;
   }
   
   #gallery img{
@@ -286,7 +286,7 @@ html{
    /* #gallery{
      display: flex;
     flex-wrap: nowrap;
-  }  */
+  }  
 
   /* desktop */
   @media screen and (min-width: 1025px){
@@ -327,7 +327,7 @@ html{
       justify-content: center; 
       justify-content: space-evenly;
       align-items: center;
-      border-top: 5px solid #a0b4ba;
+      border-top: 5px solid #1565b1;
     }
     
     }
