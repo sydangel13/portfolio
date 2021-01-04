@@ -141,9 +141,6 @@ html{
     /* min-height: 100px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    justify-content: space-evenly;
-    align-items: center;
     border-top: 5px solid #a0b4ba;
   }
   
@@ -323,6 +320,16 @@ html{
       width: 315px;
     }
 
+    #gallery{
+      /* min-height: 100px; */
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; 
+      justify-content: space-evenly;
+      align-items: center;
+      border-top: 5px solid #a0b4ba;
+    }
+    
     }
     @media screen and (prefers-reduced-motion: reduce){
 
